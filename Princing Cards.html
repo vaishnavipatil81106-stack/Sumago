@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Plans</title>
+    
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    }
+    
+body{
+    background:#f5f5f5;
+}
+
+h1{
+    text-align:center;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.parent{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    height: 400px;
+    background:rgba(155, 160, 161, 0.678);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0px 2px 10px rgba(160, 158, 158, 0.15);
+    position:relative;
+}
+.badge{
+    position:absolute;
+    top:10px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgb(240, 240, 78);
+    padding:5px 15px;
+    border-radius:20px;
+    font-size:18px;
+}
+
+.rating{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:green;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+    font-size:12px;
+}
+.content{
+    padding:15px;
+}
+
+.content h2{
+    margin-bottom:10px;
+}
+
+.content p{
+    color:rgb(134, 129, 129);
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.child{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.price{
+    font-size:70px;
+    font-weight:bold;
+}
+button{
+    background:#f4f8f67c;
+    color:rgb(5, 97, 85);
+    border:1px;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    text-decoration-color: aqua;
+}
+
+</style>
+</head>
+<body>
+    <h1> Gym Membership Plans</h1>
+    <div class="parent"></div>
+
+        <div class="card">
+
+         <div class="content"></div>  
+         
+         <p>
+            Basic
+         </p><br><br>
+         
+        <h2>RS.499</h2><br><br>
+        <p> Gym access</p>
+        <br>
+        <p>1 Trainer session</p>
+        <br>
+         <p>Locker facility</p>
+
+        <div class="child"></div><br>
+        <button> Choose plan</button>
+        </div>
+
+</style>
+
+</head>
+
+<body>
+    
+    <div class="card special">
+        <div class="badge">Most Popular</div>
+        <h2>Rs.899/mo</h2>
+        <p> Gym + cardio access</p><br>
+
+        <p> Weekly trainer sessions</p><br>
+
+        <p> Diet plan include</p>
+           <div class="child"></div><br>
+        <button> Choose plan</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

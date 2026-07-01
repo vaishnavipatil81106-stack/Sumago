@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    button {
+        background-color: rgb(102, 102, 252);   
+        color: white;             
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+       
+    }
+
+    button:hover {
+        background-color: rgb(3, 3, 99); 
+    }
+</style>
+
+<script>
+function msg(btn)
+{
+    var result = document.getElementsByClassName("card");
+    result[0].innerHTML = "HELLO VAISHNAVI";
+    result[1].style.color = "purple";
+
+}
+</script>
+
+    <h1 class="card">welcome to sumago</h1>
+    <h1 class="card">satpur nashik</h1>
+
+    <button onclick="msg();">click me</button>
+    <script>
+        function msg()
+        {
+            var result=document.getElementsByClassName("card");
+            result[0].innerHTML="HELLO VAISHNAVI";
+             result[1].style.backgroundColor="purple";
+            
+         
+            
+        }
+
+    </script>
+</body>
+</html>
