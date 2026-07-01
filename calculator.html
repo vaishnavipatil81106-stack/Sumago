@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function add(a, b) {
+    return a + b;
+}
+
+function subtract(a, b) {
+    return a - b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function divide(a, b) {
+    return a / b;
+}
+
+num1 = parseInt(prompt("Enter first number:"));
+
+ num2 = parseInt(prompt("Enter second number:"));
+
+ operation = prompt("Enter operation (+, -, *, /):");
+
+
+switch (operation) {
+
+    case "+":
+        alert("Result = " + add(num1, num2));
+        break;
+
+    case "-":
+        alert("Result = " + subtract(num1, num2));
+        break;
+
+    case "*":
+        alert("Result = " + multiply(num1, num2));
+        break;
+
+    case "/":
+        if (num2 == 0) {
+            alert("not divide by zero");
+        } else {
+            alert("Result = " + divide(num1, num2));
+        }
+        break;
+
+    default:
+        alert("Invalid Operation");
+}
+    </script>
+</body>
+</html>
